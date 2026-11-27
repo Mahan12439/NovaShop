@@ -1,0 +1,42 @@
+/* =====================================================
+   NovaShop - RTL
+   ===================================================== */
+
+html[dir="rtl"] {
+
+    --footer-hover-direction: -4px;
+}
+
+
+html[dir="rtl"] .navbar-logo {
+
+    direction: rtl;
+}
+
+
+html[dir="rtl"] .footer-logo {
+
+    direction: rtl;
+}
+
+
+/* آیکن‌های منو در فارسی */
+html[dir="rtl"] .navbar-actions {
+
+    direction: ltr;
+}
+
+
+/*
+ * عمداً اکشن‌های هدر را LTR نگه می‌داریم
+ * تا ترتیب آیکن‌ها به‌هم نریزد.
+ */
+
+
+/* متن‌ها همچنان RTL هستند */
+html[dir="rtl"] .mobile-menu,
+html[dir="rtl"] .footer-column,
+html[dir="rtl"] .footer-bottom {
+
+    text-align: right;
+}

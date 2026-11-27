@@ -1,0 +1,288 @@
+/* =====================================================
+   NovaShop - Responsive
+   ===================================================== */
+
+@media (max-width: 900px) {
+
+    .navbar-menu {
+        display: none;
+    }
+
+    .mobile-menu-button {
+        display: grid;
+        place-items: center;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .container {
+        width: min(
+                calc(100% - 24px),
+                var(--container-width)
+        );
+    }
+
+    .navbar {
+        min-height: 68px;
+        gap: 10px;
+    }
+
+    .logo-text {
+        font-size: 18px;
+    }
+
+    .logo-mark {
+        width: 34px;
+        height: 34px;
+    }
+
+    .navbar-actions {
+        gap: 5px;
+    }
+
+    .nav-icon,
+    .language-button,
+    .mobile-menu-button {
+        width: 36px;
+        height: 36px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+}
+
+
+
+@media (max-width: 1100px) {
+
+    .categories-grid,
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-slide {
+        padding: 45px;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .hero-slider,
+    .hero-fallback {
+        min-height: 620px;
+    }
+
+    .hero-slide {
+        grid-template-columns: 1fr;
+        padding: 35px;
+        text-align: center;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-image-wrapper {
+        min-height: 220px;
+    }
+
+    .hero-image {
+        max-height: 220px;
+    }
+
+    .categories-grid,
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-cta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+
+@media (max-width: 520px) {
+
+    .section {
+        padding: 55px 0;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+
+    .categories-grid,
+    .products-grid,
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-description {
+        font-size: 13px;
+    }
+
+    .home-cta {
+        padding: 28px;
+    }
+
+    .home-cta h2 {
+        font-size: 24px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .categories-grid,
+    .products-grid {
+        display: flex;
+        grid-template-columns: none;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        gap: 12px;
+        padding-bottom: 8px;
+        scrollbar-width: none;
+        scroll-snap-type: x mandatory;
+    }
+
+    .categories-grid::-webkit-scrollbar,
+    .products-grid::-webkit-scrollbar {
+        display: none;
+    }
+
+    .categories-grid .category-card {
+        flex: 0 0 165px;
+        width: 165px;
+        scroll-snap-align: start;
+    }
+
+    .products-grid .product-card {
+        flex: 0 0 245px;
+        width: 245px;
+        scroll-snap-align: start;
+    }
+
+    .category-image-wrapper {
+        aspect-ratio: 1.15;
+    }
+
+    .product-content {
+        padding: 13px;
+    }
+
+    .product-name {
+        font-size: 13px;
+    }
+
+    .product-price {
+        font-size: 14px;
+    }
+
+
+    /* Product Page */
+
+    .product-main {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .product-main-image-wrapper {
+        border-radius: 18px;
+    }
+
+    .product-main-image {
+        padding: 18px;
+    }
+
+    .product-page-heading h1 {
+        font-size: 29px;
+    }
+
+    .product-meta {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .reviews-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .review-summary {
+        min-height: 170px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .categories-grid .category-card {
+        flex-basis: 150px;
+        width: 150px;
+    }
+
+    .products-grid .product-card {
+        flex-basis: 220px;
+        width: 220px;
+    }
+
+    .product-actions {
+        flex-direction: column;
+    }
+
+    .quantity-selector {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .product-add-button {
+        width: 100%;
+    }
+
+    .product-meta {
+        grid-template-columns: 1fr;
+    }
+
+    .specification-row {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+}
